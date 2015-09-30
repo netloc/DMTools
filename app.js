@@ -10,6 +10,11 @@ var users = require('./routes/users');
 
 var app = express();
 
+//var https = require('https');
+var http = require('http');
+
+http.createServer(app).listen(80);
+
 //var connectionString = process.env.MONGOLAB_URI || 'localhost/'
 
 
