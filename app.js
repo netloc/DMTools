@@ -21,6 +21,7 @@ var app = express();
 
 var port = process.env.port || 3000;
 var address = process.env.address || '54.197.235.183'
+console.log("port: " + port + ", address: " + address)
 app.listen( port, address);
 
 
