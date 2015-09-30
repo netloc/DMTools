@@ -10,16 +10,18 @@ var users = require('./routes/users');
 
 var app = express();
 
-//var https = require('https');
-var http = require('http');
 
-http.createServer(app).listen(80);
+//var https = require('https');
+//var http = require('http');
+
+//http.createServer(app).listen(80);
 
 //var connectionString = process.env.MONGOLAB_URI || 'localhost/'
 
 
-//var port = process.env.port;
-//app.listen(port);
+var port = process.env.port || 3000;
+app.listen( port, 'shielded-ravine-2721.herokuapp.com');
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
